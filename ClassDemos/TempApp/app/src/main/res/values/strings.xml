@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CYSEC 212 Temp App</string>
+    <string-array name="choices">
+        <item>CtoF</item>
+        <item>FtoC</item>
+    </string-array>
+</resources>
