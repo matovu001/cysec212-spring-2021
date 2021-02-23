@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CYSEC212 Intents Demo</string>
+
+    <!-- Default text for Open Website -->
+    <string name="edittext_uri">http://www.gannon.edu</string>
+
+    <!-- Button label for Open Website [CHAR LIMIT=20]-->
+    <string name="button_uri">Open Website</string>
+
+    <!-- Default text for Open Location [CHAR LIMIT=30]-->
+    <string name="edittext_loc">Gannon University</string>
+
+    <!-- Button label for Open Location [CHAR LIMIT=20]-->
+    <string name="button_loc">Open Location</string>
+
+    <!-- Default text for Share This Text [CHAR LIMIT=NONE]-->
+    <string name="edittext_share">Android Mobile Development is fun</string>
+
+    <!-- Button label for Share This Text [CHAR LIMIT=20]-->
+    <string name="button_share">Share This Text</string>
+</resources>
