@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     TextView mTextViewResult;
     Button mButtonReset;
     Spinner mSpinnerChoice;
+    String selectedItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,12 +57,22 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         double inputTemp = Double.parseDouble(input);
 
         //(32°F − 32) × 5/9
-        double centigrade = ((inputTemp - 32) * 5) / 9;
-        mTextViewResult.setText(String.valueOf(centigrade));
+        if (selectedItem.equals("FtoC")) {
+            double centigrade = ((inputTemp - 32) * 5) / 9;
+            mTextViewResult.setText(String.valueOf(centigrade));
+        } else {
+            double fh = ((inputTemp *9) + 32) / 5;
+            mTextViewResult.setText(String.valueOf(fh));
+        }
+
     }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+        selectedItem = parent.getItemAtPosition(position).toString();
+
+        // Toast.makeText(this, selectedItem, Toast.LENGTH_LONG).show();
 
     }
 

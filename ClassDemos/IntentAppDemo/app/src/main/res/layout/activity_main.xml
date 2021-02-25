@@ -7,6 +7,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Second Activity"
+        android:id="@+id/button_openactivity"
+        android:onClick="openActivity"
+        />
+
     <EditText
         android:id="@+id/website_edittext"
         android:layout_width="match_parent"
@@ -18,6 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
+        android:onClick="openWebsite"
         android:text="@string/button_uri" />
 
     <EditText
@@ -31,7 +40,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:text="@string/button_loc" />
+        android:onClick="openLocation"
+        android:text="@string/button_loc"    />
 
     <EditText
         android:id="@+id/share_edittext"
@@ -44,6 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
+        android:onClick="shareText"
         android:text="@string/button_share" />
 
 </LinearLayout>

@@ -8,7 +8,7 @@
     <string name="button_uri">Open Website</string>
 
     <!-- Default text for Open Location [CHAR LIMIT=30]-->
-    <string name="edittext_loc">Gannon University</string>
+    <string name="edittext_loc">Gannon+University</string>
 
     <!-- Button label for Open Location [CHAR LIMIT=20]-->
     <string name="button_loc">Open Location</string>
